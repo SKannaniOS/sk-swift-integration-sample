@@ -10,17 +10,32 @@ public final class SKSampleIntegrationPlugin: IntegrationPlugin {
     public var analytics: Analytics?
     var destination: SampleDestinationSdk?
     
+    public init() {
+        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
+    }
+    
     public func setup(analytics: Analytics) {
+        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
         self.analytics = analytics
     }
     
     public func getDestinationInstance() -> Any? {
+        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
         return self.destination
     }
     
     public func create(destinationConfig: [String : Any]) throws {
+        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
         guard destination == nil else { return }
         self.destination = SampleDestinationSdk.create(apiKey: "asdf-1234")
+    }
+}
+
+public extension SKSampleIntegrationPlugin {
+    
+    public func track(payload: TrackEvent) {
+        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
+        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(payload)")
     }
 }
 
