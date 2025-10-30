@@ -4,21 +4,21 @@
 import Foundation
 import RudderStackAnalytics
 
-final class SKSampleIntegrationPlugin: IntegrationPlugin {
-    var key: String = "SKSample"
-    var pluginType: PluginType = .terminal
-    var analytics: Analytics?
+public final class SKSampleIntegrationPlugin: IntegrationPlugin {
+    public var key: String = "SKSample"
+    public var pluginType: PluginType = .terminal
+    public var analytics: Analytics?
     var destination: SampleDestinationSdk?
     
-    func setup(analytics: Analytics) {
+    public func setup(analytics: Analytics) {
         self.analytics = analytics
     }
     
-    func getDestinationInstance() -> Any? {
+    public func getDestinationInstance() -> Any? {
         return self.destination
     }
     
-    func create(destinationConfig: [String : Any]) throws {
+    public func create(destinationConfig: [String : Any]) throws {
         guard destination == nil else { return }
         self.destination = SampleDestinationSdk.create(apiKey: "asdf-1234")
     }
