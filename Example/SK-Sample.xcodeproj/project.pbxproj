@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		537B42A42EB3A6F10089CC53 /* SKSwiftSample in Frameworks */ = {isa = PBXBuildFile; productRef = 537B42A32EB3A6F10089CC53 /* SKSwiftSample */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		53463B562EB39BE1006A26E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537B42A42EB3A6F10089CC53 /* SKSwiftSample in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,7 @@
 			);
 			name = "SK-Sample";
 			packageProductDependencies = (
+				537B42A32EB3A6F10089CC53 /* SKSwiftSample */,
 			);
 			productName = "SK-Sample";
 			productReference = 53463B482EB39BDF006A26E5 /* SK-Sample.app */;
@@ -146,6 +152,9 @@
 			);
 			mainGroup = 53463B3F2EB39BDF006A26E5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				537B42A22EB3A6F10089CC53 /* XCLocalSwiftPackageReference "../../sk-swift-integration-sample" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 53463B492EB39BDF006A26E5 /* Products */;
 			projectDirPath = "";
@@ -487,6 +496,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		537B42A22EB3A6F10089CC53 /* XCLocalSwiftPackageReference "../../sk-swift-integration-sample" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../sk-swift-integration-sample";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		537B42A32EB3A6F10089CC53 /* SKSwiftSample */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SKSwiftSample;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53463B402EB39BDF006A26E5 /* Project object */;
 }
