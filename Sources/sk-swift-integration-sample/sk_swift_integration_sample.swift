@@ -14,11 +14,6 @@ public final class SKSampleIntegrationPlugin: IntegrationPlugin {
         LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
     }
     
-    public func setup(analytics: Analytics) {
-        LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
-        self.analytics = analytics
-    }
-    
     public func getDestinationInstance() -> Any? {
         LoggerAnalytics.debug("SKSampleIntegrationPlugin :: \(#function)")
         return self.destination
