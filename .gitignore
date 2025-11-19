@@ -19,6 +19,7 @@ playground.xcworkspace
 
 ## Swift Package Manager
 /.build/
+.netrc
 
 # Dependency management files (not needed for libraries)
 Packages/
